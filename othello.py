@@ -1,11 +1,10 @@
 # Author: Chanse Syres
 # GitHub username: chansesyres
 # Date: 06/11/2023
-# Description: This code runs a game called Othello. Visit the link on line 9 to read the rules.
+# Description: This code runs a game called Othello.
 
 # How to play?
-# Click the "Run" button and then enter lines 11-14 into the console without the hashtags.
-# You can edit the names inside the quotation marks.
+# Enter "othello.py" in the terminal, it will launch the game.
 # Rules: https://www.eothello.com/#how-to-play
 
 # game = Othello()
@@ -155,3 +154,9 @@ class Othello:
             player_index = 1 - player_index
         self.print_board()
         print(self.return_winner())
+
+if __name__ == "__main__":
+    game = Othello()
+    game.create_player("Alice", "black")
+    game.create_player("Bob", "white")
+    game.play_game()
